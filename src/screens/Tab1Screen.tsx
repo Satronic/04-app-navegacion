@@ -1,13 +1,15 @@
 import React from 'react';
-import Icon from 'react-native-vector-icons/Ionicons';
 import { Text, View } from 'react-native';
 import { styles } from '../theme/appTheme';
+import { TouchableIcon } from '../components/TouchableIcon';
 
 export const Tab1Screen = () => {
   return (
     <View style={styles.globalMargin}>
         <Text>
-          <Icon name="briefcase-outline" size={60} color="green" />
+          <TouchableIcon iconName="briefcase-outline" />
+          <TouchableIcon iconName="bar-chart-outline" />
+          <TouchableIcon iconName="copy-outline" />
         </Text>
     </View>
   )
